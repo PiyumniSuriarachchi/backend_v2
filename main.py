@@ -42,9 +42,9 @@ logger = logging.getLogger(__name__)
 
 
 # Replace with your AWS credentials from environment variables
-#AWS_ACCESS_KEY_ID = 'methana acces id eka'
+AWS_ACCESS_KEY_ID = 'WS_ACCESS_KEY_ID methana acces id eka'
 
-#AWS_SECRET_ACCESS_KEY = 'm'
+AWS_SECRET_ACCESS_KEY = 'AWS_SECRET_ACCESS_KEY methana'
 
 BUCKET_NAME = 'pdfnew2'  # Replace with your S3 bucket name
 region='eu-north-1'
