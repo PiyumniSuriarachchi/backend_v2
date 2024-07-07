@@ -72,7 +72,7 @@ for bucket in s3_client.list_buckets()['Buckets']:
 
 
 # Retrieve MongoDB URL from environment variables
-mongo_url="mongodb+srv://piyumniudara42:Livi3RXjhMDnrLb7@cluster0.kpapx4j.mongodb.net//lesiread"
+mongo_url="mongodb+srv://piyumniudara42:Livi3RXjhMDnrLb7@cluster0.kpapx4j.mongodb.net/lesiread"
 
 if not mongo_url:
     raise EnvironmentError("MONGO_URL not found in environment variables.")
