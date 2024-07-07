@@ -47,7 +47,7 @@ AWS_ACCESS_KEY_ID = 'AWS_access_key eka methan'
 
 AWS_SECRET_ACCESS_KEY = 'AWS_secret_access key eka methana'
 
-BUCKET_NAME = 'piyumnisawsbucket'  # Replace with your S3 bucket name
+BUCKET_NAME = 'piyumnisawsbuvket'  # Replace with your S3 bucket name
 region='eu-north-1'
 
 #boto3.set_stream_logger('', level='DEBUG')
