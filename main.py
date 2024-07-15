@@ -324,7 +324,7 @@ def upload_document():
 
             
             # Generate presigned URL for immediate access
-            presigned_url = generate_presigned_url(s3_client, 'get_object', {"Bucket": BUCKET_NAME, "Key": filename}, 3600)
+            presigned_url = generate_presigned_url(s3_client, 'get_object', {"Bucket": BUCKET_NAME, "Key": filename}, 604800)
             print(presigned_url)
 
             # 2. Download from S3 and process with pdfplumber (NEW)
