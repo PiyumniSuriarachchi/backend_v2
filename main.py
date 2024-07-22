@@ -457,7 +457,13 @@ def generate_answer():
         question = translation_result['translation']
         # Generate an answer to the translated question using PDF contents
         answer = answer_question(question, current_viewed_pdf)
-        return jsonify(answer)
+
+        answer_result = translate_text({'text': answer, 'target_language': input_language })
+
+        print(type(answer),answer)
+        print(type(answer_result), answer_result['translation'])
+        
+        return jsonify(answer_result['translation'])
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
